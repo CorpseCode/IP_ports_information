@@ -1,0 +1,20 @@
+Service  Name,Port  Number,Transport  Protocol,Description
+,4,tcp,Unassigned
+,6,tcp,Unassigned
+,8,tcp,Unassigned
+,10,tcp,Unassigned
+,12,tcp,Unassigned
+,14,tcp,Unassigned
+,15,tcp,Unassigned  was  netstat
+,16,tcp,Unassigned
+,26,tcp,Unassigned
+,28,tcp,Unassigned
+,30,tcp,Unassigned
+,32,tcp,Unassigned
+,34,tcp,Unassigned
+,36,tcp,Unassigned
+,40,tcp,Unassigned
+,60,tcp,Unassigned
+,1895,tcp,unassigned
+,2693,tcp,Unassigned
+remoteware-un,2999,tcp,RemoteWare  Unassigned

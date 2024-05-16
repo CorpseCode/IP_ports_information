@@ -1,0 +1,22 @@
+Service  Name,Port  Number,Transport  Protocol,Description
+,4,udp,Unassigned
+,6,udp,Unassigned
+,8,udp,Unassigned
+,10,udp,Unassigned
+,12,udp,Unassigned
+,14,udp,Unassigned
+,15,udp,Unassigned
+,16,udp,Unassigned
+,26,udp,Unassigned
+,28,udp,Unassigned
+,30,udp,Unassigned
+,32,udp,Unassigned
+,34,udp,Unassigned
+,36,udp,Unassigned
+,40,udp,Unassigned
+,60,udp,Unassigned
+,1895,udp,unassigned
+,2693,udp,Unassigned
+remoteware-un,2999,udp,RemoteWare  Unassigned
+,5316,udp,Unassigned
+,44323,udp,Unassigned

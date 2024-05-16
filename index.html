@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TCP/UDP Ports Information</title>
+    <style>
+        body {
+            background-color: #111111; /* Dark background */
+            color: #ff9900; /* Orange text */
+            font-family: 'Helvetica Neue', Arial, sans-serif; /* Cleaner, more modern font */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .heading-container {
+            text-align: center;
+            margin-top: 50px;
+            animation: swipeIn 1s forwards;
+        }
+        h1 {
+            color: #ff9900; /* Orange heading */
+            margin: 0;
+            font-size: 2.5em; /* Increased font size for the heading */
+        }
+        @keyframes swipeIn {
+            0% { transform: translateX(-100%); opacity: 0; }
+            100% { transform: translateX(0); opacity: 1; }
+        }
+        .card-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 80px; /* Increased distance between heading and cards */
+            width: 100%;
+            max-width: 750px; /* Increased the max width by 25% */
+        }
+        .card {
+            width: 100%;
+            max-width: 625px; /* Increased the max width by 25% */
+            padding: 20px;
+            margin: 20px 0; /* Increased distance between cards */
+            background-color: #ff6600; /* Orange card background */
+            color: #333333; /* Deep dark gray text */
+            border-radius: 50px;
+            box-shadow: 0 0 20px rgba(255, 153, 0, 0.3); /* Neon glow */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            opacity: 0;
+            transform: translateY(50px);
+            font-size: 1.5em; /* Increased font size */
+        }
+        .card:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 0 30px rgba(255, 153, 0, 0.6); /* Brighter neon glow on hover */
+        }
+        @keyframes bounceIn {
+            0% { transform: translateY(50px) scale(0.8); opacity: 0; }
+            60% { transform: translateY(-20px) scale(1.05); opacity: 1; }
+            100% { transform: translateY(0) scale(1); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="heading-container">
+        <h1>TCP/UDP Ports Information</h1>
+    </div>
+
+    <!-- Card Container -->
+    <div class="card-container">
+        <!-- All Ports Information -->
+        <div class="card" onclick="window.location.href = 'all_ports_information.html';">
+            <span>All Ports Information</span>
+        </div>
+        
+        <!-- TCP Ports -->
+        <div class="card" onclick="window.location.href = 'tcp_ports.html';">
+            <span>TCP Ports</span>
+        </div>
+
+        <!-- UDP Ports -->
+        <div class="card" onclick="window.location.href = 'udp_ports.html';">
+            <span>UDP Ports</span>
+        </div>
+
+        <!-- TCP Unassigned Ports -->
+        <div class="card" onclick="window.location.href = 'tcp_unassigned_ports.html';">
+            <span>TCP Unassigned Ports</span>
+        </div>
+
+        <!-- UDP Unassigned Ports -->
+        <div class="card" onclick="window.location.href = 'udp_unassigned_ports.html';">
+            <span>UDP Unassigned Ports</span>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var cards = document.querySelectorAll(".card");
+            cards.forEach(function(card, index) {
+                card.style.animation = `bounceIn 1s ease-out forwards`;
+                card.style.animationDelay = `${index * 0.2}s`;
+                card.style.opacity = 1;  // Ensure cards remain visible
+                card.style.transform = "translateY(0) scale(1)";  // Final state
+            });
+        });
+    </script>
+</body>
+</html>
+
